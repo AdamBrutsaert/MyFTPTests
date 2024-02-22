@@ -21,8 +21,8 @@ test00()
     return
   fi
 
-  launch_test "$test_name" "USER Anonymous" 331
-  launch_test "$test_name" "PASS" 230
+  launch_test "$test_name" "USER Anonymous" 331 # Replace this line if you're trying on ftp.dlptest.com
+  launch_test "$test_name" "PASS" 230 # Replace this line if you're trying on ftp.dlptest.com
 
   print_succeeded "$test_name"
   return
@@ -39,7 +39,7 @@ test01()
     return
   fi
 
-  launch_test "$test_name" "USER invalid" 430
+  launch_test "$test_name" "USER invalid" 331
 
   print_succeeded "$test_name"
   return
@@ -57,7 +57,7 @@ test02()
   fi
 
   launch_test "$test_name" "USER Anonymous" 331
-  launch_test "$test_name" "PASS invalid" 430
+  launch_test "$test_name" "PASS invalid" 530
 
   print_succeeded "$test_name"
   return

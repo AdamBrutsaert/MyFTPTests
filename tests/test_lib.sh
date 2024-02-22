@@ -5,7 +5,7 @@ PIPE=fifo
 OUT=outfile
 TAIL=`which tail`
 NC="`which nc` -C"
-TIMEOUT=1
+TIMEOUT=1 # Change this value if you're are using ftp.dlptest.com (to 3) or with slow remote FTP servers for example
 
 print_info()
 {
